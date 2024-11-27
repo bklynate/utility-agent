@@ -1,0 +1,348 @@
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:24:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:24:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:24:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:24:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:24:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:24:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:24:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:24:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:24:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:24:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:29:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:29:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:29:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+{"level":"info","message":"Starting HTML processing"}
+{"level":"error","message":"Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')","stack":"TypeError: Cannot read properties of undefined (reading 'allowedTags')\n    at cleanHtml (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/cleanHTML.ts:29:42)\n    at fetchPageContent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:101:12)\n    at async queryGoogle (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/tools/queryGoogle/queryGoogle.ts:121:23)\n    at async runTool (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/toolRunner.ts:15:24)\n    at async runAgent (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/src/agent.ts:40:28)\n    at async <anonymous> (/Users/bklynate/dev_work/aiWorld/agent-from-scratch/index.ts:23:24)"}
+2024-11-22T02:29:20.347Z [INFO]: Starting HTML processing
+2024-11-22T02:29:20.552Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T02:29:22.194Z [INFO]: Starting HTML processing
+2024-11-22T02:29:22.368Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T02:29:26.642Z [INFO]: Starting HTML processing
+2024-11-22T02:29:27.404Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T02:29:29.259Z [INFO]: Starting HTML processing
+2024-11-22T02:29:29.293Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T02:29:31.130Z [INFO]: Starting HTML processing
+2024-11-22T02:29:31.507Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T02:31:27.775Z [INFO]: Starting HTML processing
+2024-11-22T02:31:28.131Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T02:31:29.284Z [INFO]: Starting HTML processing
+2024-11-22T02:31:29.364Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T02:31:32.519Z [INFO]: Starting HTML processing
+2024-11-22T02:31:32.747Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T02:46:52.444Z [INFO]: Starting HTML processing
+2024-11-22T02:46:52.972Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T02:46:54.902Z [INFO]: Starting HTML processing
+2024-11-22T02:46:55.139Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T02:58:09.930Z [INFO]: Starting HTML processing
+2024-11-22T02:58:10.196Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T03:44:52.929Z [INFO]: Starting HTML processing
+2024-11-22T03:44:53.282Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T03:56:20.506Z [INFO]: Starting HTML processing
+2024-11-22T03:56:20.508Z [ERROR]: Failed to process HTML: Cannot read properties of undefined (reading 'allowedTags')
+2024-11-22T17:00:22.502Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-22T17:01:25.860Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-22T17:01:25.954Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-22T19:11:03.699Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-22T19:11:04.021Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-22T19:11:07.224Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-22T19:11:08.460Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-22T19:11:10.103Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-22T19:11:10.192Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-22T19:16:29.314Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-22T19:16:30.418Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-22T19:16:33.959Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-22T19:16:35.151Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-22T19:16:36.594Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-22T19:16:36.700Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-22T19:16:36.702Z [INFO]: Google search results processed successfully
+2024-11-23T01:35:41.886Z [INFO]: Google search results processed successfully
+2024-11-24T20:25:06.496Z [INFO]: Google search results processed successfully
+2024-11-24T20:31:21.381Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-24T20:31:22.114Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-24T20:31:22.129Z [INFO]: Google search results processed successfully
+2024-11-24T20:46:39.480Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-24T20:46:39.904Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-24T20:46:39.917Z [INFO]: Google search results processed successfully
+2024-11-24T21:02:45.883Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-24T21:02:46.689Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-24T21:02:46.705Z [INFO]: Google search results processed successfully
+2024-11-24T21:23:26.116Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-24T21:51:02.650Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-24T21:51:02.816Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-24T21:51:02.818Z [INFO]: Google search results processed successfully
+2024-11-24T21:52:14.793Z [INFO]: Google search results processed successfully
+2024-11-25T23:52:36.515Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-25T23:52:44.228Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-25T23:52:44.232Z [INFO]: Google search results processed successfully
+2024-11-26T00:01:32.641Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T00:01:32.782Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T00:01:32.787Z [INFO]: Google search results processed successfully
+2024-11-26T00:04:46.503Z [INFO]: Google search results processed successfully
+2024-11-26T00:09:19.477Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T00:09:19.666Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T00:09:19.675Z [INFO]: Google search results processed successfully
+2024-11-26T00:42:19.289Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T00:42:19.482Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T00:42:20.840Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T00:42:20.993Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T00:42:22.690Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T00:42:22.799Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T00:42:24.637Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T00:42:24.806Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T00:42:27.207Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T00:42:27.651Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T00:42:29.080Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T00:42:29.144Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T00:42:30.928Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T00:45:18.497Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T00:45:18.640Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T00:45:18.667Z [INFO]: Google search results processed successfully
+2024-11-26T01:03:04.938Z [INFO]: Google search results processed successfully
+2024-11-26T01:03:57.888Z [INFO]: Google search results processed successfully
+2024-11-26T01:05:15.921Z [INFO]: parsedNumOfResults:
+2024-11-26T01:05:15.922Z [INFO]: resultsCount:
+2024-11-26T01:05:15.922Z [INFO]: Google search results processed successfully
+2024-11-26T01:06:33.623Z [INFO]: parsedNumOfResults:
+2024-11-26T01:06:33.624Z [INFO]: resultsCount:
+2024-11-26T01:06:37.616Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T01:06:38.243Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T01:06:38.248Z [INFO]: Google search results processed successfully
+2024-11-26T01:08:19.961Z [INFO]: parsedNumOfResults:
+2024-11-26T01:08:19.962Z [INFO]: resultsCount:
+2024-11-26T01:08:19.962Z [INFO]: Google search results processed successfully
+2024-11-26T01:14:46.848Z [INFO]: parsedNumOfResults:
+2024-11-26T01:14:46.850Z [INFO]: resultsCount:
+2024-11-26T01:14:50.389Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T01:14:51.031Z [INFO]: Extracted and cleaned content:
+2024-11-26T01:14:51.031Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T01:14:51.035Z [INFO]: Google search results processed successfully
+2024-11-26T01:19:19.923Z [INFO]: parsedNumOfResults:
+2024-11-26T01:19:19.923Z [INFO]: resultsCount:
+2024-11-26T01:19:19.923Z [INFO]: Google search results processed successfully
+2024-11-26T01:21:41.462Z [INFO]: parsedNumOfResults:
+2024-11-26T01:21:41.462Z [INFO]: resultsCount:
+2024-11-26T01:21:41.462Z [INFO]: Google search results processed successfully
+2024-11-26T01:24:02.551Z [INFO]: parsedNumOfResults:
+2024-11-26T01:24:02.551Z [INFO]: resultsCount:
+2024-11-26T01:24:02.551Z [INFO]: Google search results processed successfully
+2024-11-26T01:26:31.093Z [INFO]: parsedNumOfResults:
+2024-11-26T01:26:31.093Z [INFO]: resultsCount:
+2024-11-26T01:26:31.093Z [INFO]: Google search results processed successfully
+2024-11-26T01:27:49.487Z [INFO]: parsedNumOfResults:
+2024-11-26T01:27:49.488Z [INFO]: resultsCount:
+2024-11-26T01:27:53.357Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T01:27:54.036Z [INFO]: Extracted and cleaned content:
+2024-11-26T01:27:54.036Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T01:27:55.021Z [INFO]: Google search results processed successfully
+2024-11-26T01:43:57.711Z [INFO]: parsedNumOfResults:
+2024-11-26T01:43:57.711Z [INFO]: resultsCount:
+2024-11-26T01:44:01.532Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T01:44:01.846Z [INFO]: Extracted and cleaned content:
+2024-11-26T01:44:01.846Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T01:44:03.562Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T01:44:03.609Z [INFO]: Extracted and cleaned content:
+2024-11-26T01:44:03.609Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T01:44:04.989Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T01:44:05.065Z [INFO]: Extracted and cleaned content:
+2024-11-26T01:44:05.065Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T01:44:05.094Z [INFO]: Google search results processed successfully
+2024-11-26T01:58:31.475Z [INFO]: parsedNumOfResults:
+2024-11-26T01:58:31.475Z [INFO]: resultsCount:
+2024-11-26T01:58:34.403Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T01:58:34.941Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T01:58:38.377Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T02:01:37.898Z [INFO]: parsedNumOfResults:
+2024-11-26T02:01:37.899Z [INFO]: resultsCount:
+2024-11-26T02:01:38.854Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T02:01:39.098Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T02:01:40.078Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T02:01:40.190Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T02:01:41.108Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T02:01:41.242Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T02:01:41.244Z [INFO]: Google search results processed successfully
+2024-11-26T02:20:58.433Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T02:20:58.569Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T02:21:01.214Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T02:24:45.267Z [INFO]: Google search results processed successfully
+2024-11-26T02:26:00.390Z [INFO]: Google search results processed successfully
+2024-11-26T02:29:18.343Z [INFO]: parsedNumOfResults:
+2024-11-26T02:29:18.344Z [INFO]: resultsCount:
+2024-11-26T02:29:18.344Z [INFO]: Google search results processed successfully
+2024-11-26T02:31:24.311Z [INFO]: parsedNumOfResults:
+2024-11-26T02:31:24.312Z [INFO]: resultsCount:
+2024-11-26T02:31:24.312Z [INFO]: Google search results processed successfully
+2024-11-26T02:49:42.762Z [INFO]: parsedNumOfResults:
+2024-11-26T02:49:42.763Z [INFO]: resultsCount:
+2024-11-26T02:49:42.763Z [INFO]: Google search results processed successfully
+2024-11-26T02:58:11.077Z [INFO]: parsedNumOfResults:
+2024-11-26T02:58:11.078Z [INFO]: resultsCount:
+2024-11-26T02:58:14.971Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T02:58:15.105Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T02:58:18.294Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T03:04:25.324Z [INFO]: parsedNumOfResults:
+2024-11-26T03:04:25.325Z [INFO]: resultsCount:
+2024-11-26T03:04:28.059Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T03:04:28.734Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T03:04:33.644Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T03:09:27.988Z [INFO]: parsedNumOfResults:
+2024-11-26T03:09:27.988Z [INFO]: resultsCount:
+2024-11-26T03:09:27.988Z [INFO]: Google search results processed successfully
+2024-11-26T03:22:38.439Z [INFO]: parsedNumOfResults:
+2024-11-26T03:22:38.440Z [INFO]: resultsCount:
+2024-11-26T03:22:40.627Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T03:22:40.794Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T03:22:44.684Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T03:25:36.422Z [INFO]: parsedNumOfResults:
+2024-11-26T03:25:36.423Z [INFO]: resultsCount:
+2024-11-26T03:25:36.423Z [INFO]: Google search results processed successfully
+2024-11-26T03:30:54.506Z [INFO]: parsedNumOfResults:
+2024-11-26T03:30:54.507Z [INFO]: resultsCount:
+2024-11-26T03:30:54.507Z [INFO]: Google search results processed successfully
+2024-11-26T03:32:20.787Z [INFO]: parsedNumOfResults:
+2024-11-26T03:32:20.788Z [INFO]: resultsCount:
+2024-11-26T03:32:25.289Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T03:32:25.949Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T03:32:28.900Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T03:32:29.236Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T03:32:30.354Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T03:32:30.496Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T03:32:30.498Z [INFO]: Google search results processed successfully
+2024-11-26T03:39:55.257Z [INFO]: parsedNumOfResults:
+2024-11-26T03:39:55.258Z [INFO]: resultsCount:
+2024-11-26T03:39:58.748Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T03:44:15.317Z [INFO]: parsedNumOfResults:
+2024-11-26T03:44:15.318Z [INFO]: resultsCount:
+2024-11-26T03:44:15.318Z [INFO]: Google search results processed successfully
+2024-11-26T03:55:40.972Z [INFO]: parsedNumOfResults:
+2024-11-26T03:55:40.973Z [INFO]: resultsCount:
+2024-11-26T03:55:44.091Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T03:55:44.142Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T03:55:47.425Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T03:55:47.451Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T03:55:48.803Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T04:09:40.801Z [INFO]: parsedNumOfResults:
+2024-11-26T04:09:40.802Z [INFO]: resultsCount:
+2024-11-26T04:09:45.868Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T04:13:30.683Z [INFO]: parsedNumOfResults:
+2024-11-26T04:13:30.683Z [INFO]: resultsCount:
+2024-11-26T04:13:30.683Z [INFO]: Google search results processed successfully
+2024-11-26T04:21:40.615Z [INFO]: parsedNumOfResults:
+2024-11-26T04:21:40.616Z [INFO]: resultsCount:
+2024-11-26T04:21:40.616Z [INFO]: Google search results processed successfully
+2024-11-26T04:22:56.999Z [INFO]: parsedNumOfResults:
+2024-11-26T04:22:56.999Z [INFO]: resultsCount:
+2024-11-26T04:22:59.654Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T04:22:59.709Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T04:23:02.225Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T04:23:02.487Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T04:23:03.873Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T04:24:46.508Z [INFO]: parsedNumOfResults:
+2024-11-26T04:24:46.509Z [INFO]: resultsCount:
+2024-11-26T04:24:46.509Z [INFO]: Google search results processed successfully
+2024-11-26T04:52:01.166Z [INFO]: parsedNumOfResults:
+2024-11-26T04:52:01.167Z [INFO]: resultsCount:
+2024-11-26T04:52:03.654Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T04:52:04.245Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T04:52:07.067Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:01:52.336Z [INFO]: parsedNumOfResults:
+2024-11-26T06:01:52.337Z [INFO]: resultsCount:
+2024-11-26T06:01:52.337Z [INFO]: Google search results processed successfully
+2024-11-26T06:04:08.509Z [INFO]: parsedNumOfResults:
+2024-11-26T06:04:08.510Z [INFO]: resultsCount:
+2024-11-26T06:04:11.265Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:04:11.320Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:04:43.474Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:04:43.502Z [ERROR]: Parsing failed for URL: https://www.google.com/url?q=https://www.accuweather.com/en/us/new-york/10021/current-weather/349727&sa=U&ved=2ahUKEwi-u_rvqfmJAxWLEFkFHSL2GDsQFnoECAQQAg&usg=AOvVaw1q0vCtwxowaE9YwrCWj6SZ
+2024-11-26T06:04:43.569Z [INFO]: Google search results processed successfully
+2024-11-26T06:05:26.003Z [INFO]: parsedNumOfResults:
+2024-11-26T06:05:26.003Z [INFO]: resultsCount:
+2024-11-26T06:05:26.003Z [INFO]: Google search results processed successfully
+2024-11-26T06:16:32.902Z [INFO]: parsedNumOfResults:
+2024-11-26T06:16:32.903Z [INFO]: resultsCount:
+2024-11-26T06:16:32.903Z [INFO]: Google search results processed successfully
+2024-11-26T06:17:18.438Z [INFO]: parsedNumOfResults:
+2024-11-26T06:17:18.439Z [INFO]: resultsCount:
+2024-11-26T06:17:21.452Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:19:48.753Z [INFO]: parsedNumOfResults:
+2024-11-26T06:19:48.753Z [INFO]: resultsCount:
+2024-11-26T06:19:50.954Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:21:37.660Z [INFO]: parsedNumOfResults:
+2024-11-26T06:21:37.660Z [INFO]: resultsCount:
+2024-11-26T06:21:39.942Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:21:40.021Z [ERROR]: Parsing failed for URL: https://www.google.com/url?q=https://weather.com/weather/today/l/Manhattan%2BNY%3FcanonicalCityId%3Dfc47c333c5d13e34e34c9fdb6e047ceb70f7891e01bc9e1d574b5f93f58aa76d&sa=U&ved=2ahUKEwj__pLkrfmJAxUyLFkFHRYiEEEQFnoECAQQAg&usg=AOvVaw3rdEY9wNxnjEAqKeHtT0of
+2024-11-26T06:21:43.039Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:21:43.079Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:21:44.471Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:21:44.487Z [ERROR]: Parsing failed for URL: https://www.google.com/url?q=https://www.accuweather.com/en/us/new-york/10021/current-weather/349727&sa=U&ved=2ahUKEwj__pLkrfmJAxUyLFkFHRYiEEEQFnoECA0QAg&usg=AOvVaw1uIv6gMiMQ2DOO3A_wTAH3
+2024-11-26T06:21:44.571Z [INFO]: Google search results processed successfully
+2024-11-26T06:29:03.284Z [INFO]: parsedNumOfResults:
+2024-11-26T06:29:03.285Z [INFO]: resultsCount:
+2024-11-26T06:29:03.285Z [INFO]: Google search results processed successfully
+2024-11-26T06:36:10.736Z [INFO]: parsedNumOfResults:
+2024-11-26T06:36:10.737Z [INFO]: resultsCount:
+2024-11-26T06:36:10.737Z [INFO]: Google search results processed successfully
+2024-11-26T06:36:42.445Z [INFO]: parsedNumOfResults:
+2024-11-26T06:36:42.445Z [INFO]: resultsCount:
+2024-11-26T06:36:45.656Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:36:45.712Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:36:48.921Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:36:49.264Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:36:50.968Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:36:50.995Z [ERROR]: Parsing failed for URL: https://www.google.com/url?q=https://www.accuweather.com/en/us/new-york/10021/current-weather/349727&sa=U&ved=2ahUKEwjb88OTsfmJAxWqD1kFHfn3HdkQFnoECAwQAg&usg=AOvVaw2k_xrdStmq45AW48arGobD
+2024-11-26T06:36:54.035Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:36:54.068Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:36:54.952Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:36:55.125Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:36:55.314Z [INFO]: Google search results processed successfully
+2024-11-26T06:38:36.143Z [INFO]: parsedNumOfResults:
+2024-11-26T06:38:36.144Z [INFO]: resultsCount:
+2024-11-26T06:38:36.144Z [INFO]: Google search results processed successfully
+2024-11-26T06:39:11.298Z [INFO]: parsedNumOfResults:
+2024-11-26T06:39:11.299Z [INFO]: resultsCount:
+2024-11-26T06:39:13.780Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:39:13.847Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:39:16.570Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:39:16.849Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:39:17.591Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:39:17.600Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:39:17.669Z [INFO]: Google search results processed successfully
+2024-11-26T06:43:40.768Z [INFO]: parsedNumOfResults:
+2024-11-26T06:43:40.768Z [INFO]: resultsCount:
+2024-11-26T06:43:43.519Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:43:43.583Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:43:47.722Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:43:47.772Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:43:49.284Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:43:49.302Z [ERROR]: Parsing failed for URL: https://www.accuweather.com/en/us/new-york/10021/current-weather/349727
+2024-11-26T06:43:49.383Z [INFO]: Google search results processed successfully
+2024-11-26T06:46:40.266Z [INFO]: parsedNumOfResults:
+2024-11-26T06:46:40.267Z [INFO]: resultsCount:
+2024-11-26T06:46:43.034Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:46:43.111Z [ERROR]: Parsing failed for URL: https://www.google.com/url?esrc=s&q=&rct=j&sa=U&url=https://weather.com/weather/today/l/Manhattan%2BNY%3FcanonicalCityId%3Dfc47c333c5d13e34e34c9fdb6e047ceb70f7891e01bc9e1d574b5f93f58aa76d&ved=2ahUKEwiOgMiws_mJAxUIEVkFHVL6Nz8QFnoECAsQAg&usg=AOvVaw3-hj3ZUUovTOp_X1COhvPY
+2024-11-26T06:46:45.802Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:46:46.108Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:46:47.584Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-26T06:46:47.610Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-26T06:46:47.693Z [INFO]: Google search results processed successfully
+2024-11-27T13:35:02.788Z [INFO]: parsedNumOfResults:
+2024-11-27T13:35:02.788Z [INFO]: resultsCount:
+2024-11-27T13:35:06.399Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-27T13:35:06.497Z [ERROR]: Parsing failed for URL: https://weather.com/weather/today/l/Manhattan+NY?canonicalCityId=fc47c333c5d13e34e34c9fdb6e047ceb70f7891e01bc9e1d574b5f93f58aa76d
+2024-11-27T13:35:09.942Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-27T13:35:10.245Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-27T13:35:11.599Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-27T13:35:11.624Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-27T13:35:11.706Z [INFO]: Google search results processed successfully

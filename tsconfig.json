@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
+    "lib": ["dom", "esnext"],
     "target": "ESNext",
     "module": "ESNext",
     "moduleDetection": "force",
@@ -17,6 +17,15 @@
     "skipLibCheck": true,
     "strict": true,
     "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+
+    /* Path aliases */
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@tools/*": ["src/tools/*"],
+      "@utils/*": ["utils/*"],
+      "@components/*": ["src/components/*"]
+    }
   }
 }

@@ -3,23 +3,49 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "start": "npx tsx index.ts"
+    "start:trace": "NODE_OPTIONS='--trace-deprecation' npx tsx index.ts",
+    "start": "NODE_OPTIONS='--no-deprecation' npx tsx index.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@commander-js/extra-typings": "^12.1.0",
+    "@types/bun": "latest",
+    "@types/chalk": "^0.4.31",
+    "@types/html-to-text": "^9.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/luxon": "^3.4.2",
+    "@types/puppeteer": "^5.4.7",
+    "@types/random-useragent": "^0.3.3",
+    "@types/sanitize-html": "^2.13.0",
+    "@types/winston": "^2.4.4"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@postlight/parser": "^2.2.3",
+    "chalk": "^5.3.0",
+    "cheerio": "^1.0.0",
+    "commander": "^12.1.0",
     "dotenv": "^16.4.5",
     "got": "^14.4.4",
+    "html-to-text": "^9.0.5",
+    "inquirer": "^12.1.0",
     "lowdb": "^7.0.1",
-    "openai": "^4.70.3",
+    "luxon": "^3.5.0",
+    "natural": "^8.0.1",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.73.1",
     "ora": "^8.1.1",
+    "puppeteer": "^23.7.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "random-useragent": "^0.5.0",
+    "sanitize-html": "^2.13.1",
     "terminal-image": "^3.0.0",
     "tsx": "^4.19.2",
     "uuid": "^11.0.2",
+    "whatwg-url": "^14.0.0",
+    "winston": "^3.17.0",
     "zod": "^3.23.8"
   }
 }
