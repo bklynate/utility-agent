@@ -142,7 +142,7 @@ async function fetchGoogleSearchResults(
       url: decodeGoogleRedirectUrl(result.url),
     }));
 
-    logger.info('number of results:', decodedResults?.length || 0);
+    logger.info(`number of results:', ${decodedResults?.length || 0}`);
 
     return decodedResults;
   } catch (error) {
