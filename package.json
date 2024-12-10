@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start:trace": "NODE_OPTIONS='--trace-deprecation' npx tsx index.ts",
-    "start": "export ORT_LOG_LEVEL=ERROR NODE_OPTIONS='--no-deprecation' npx tsx index.ts"
+    "start": "ORT_LOG_LEVEL=ERROR NODE_OPTIONS='--no-deprecation' npx tsx index.ts"
   },
   "devDependencies": {
     "@commander-js/extra-typings": "^12.1.0",
