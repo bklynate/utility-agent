@@ -21,7 +21,7 @@ const createToolDefinition = (
 // console.log(curryStats);
 
 // const warriorsTeamId = await NBA.teamIdFromName('warriors');
-const scoreboard = await NBA.stats.scoreboard('20181008');
+const scoreboard = await NBA.data.standings();
 
 // console.log(warriorsTeamId);
 console.log(scoreboard);

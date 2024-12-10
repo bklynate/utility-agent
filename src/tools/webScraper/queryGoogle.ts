@@ -1,10 +1,31 @@
+import '@tensorflow/tfjs-node';
 import type { ToolFn } from 'types';
 import puppeteer from 'puppeteer-extra';
 import randomUseragent from 'random-useragent';
 import StealthPlugin from 'puppeteer-extra-plugin-stealth';
 import { z } from 'zod';
-import { cleanHtml } from '@tools/queryGoogle/cleanHTML';
+import { cleanHtml } from './cleanHTML';
 import logger from '@utils/logger';
+import * as use from '@tensorflow-models/universal-sentence-encoder';
+
+let useModel: use.UniversalSentenceEncoder | null = null;
+
+// Load the Universal Sentence Encoder model (Singleton)
+const loadUSEModel = async (): Promise<use.UniversalSentenceEncoder> => {
+  if (!useModel) {
+    useModel = await use.load();
+  }
+  return useModel;
+};
+
+// Calculate cosine similarity
+const cosineSimilarity = (vecA: number[], vecB: number[]): number => {
+  const dotProduct = vecA.reduce((sum, val, i) => sum + val * vecB[i], 0);
+  const magnitudeA = Math.sqrt(vecA.reduce((sum, val) => sum + val * val, 0));
+  const magnitudeB = Math.sqrt(vecB.reduce((sum, val) => sum + val * val, 0));
+  return dotProduct / (magnitudeA * magnitudeB);
+};
+
 
 // Apply stealth tactics using puppeteer-extra and stealth plugin
 puppeteer.use(StealthPlugin());
@@ -56,6 +77,23 @@ const decodeGoogleRedirectUrl = (url: string): string => {
     return url;
   }
 };
+
+async function fetchGoogleSearchResultsWithRelevance(
+  query: string
+): Promise<Array<{ title: string; url: string; relevance: number }>> {
+  const results = await fetchGoogleSearchResults(query); // Original search function
+  const model = await loadUSEModel();
+
+  // Generate embeddings
+  const queryEmbedding = (await model.embed([query])).arraySync()[0];
+  const resultEmbeddings = (await model.embed(results.map((r) => r.title))).arraySync();
+
+  // Calculate relevance scores
+  return results.map((result, index) => ({
+    ...result,
+    relevance: cosineSimilarity(queryEmbedding, resultEmbeddings[index]),
+  })).sort((a, b) => b.relevance - a.relevance); // Sort by relevance
+}
 
 // Helper function to fetch search results
 async function fetchGoogleSearchResults(
@@ -168,7 +206,7 @@ export const queryGoogle: ToolFn<Args, string> = async ({ toolArgs }) => {
   const { query, numOfResults } = toolArgs;
 
   // Fetch and rank search results
-  const searchResults = await fetchGoogleSearchResults(query);
+  const searchResults = await fetchGoogleSearchResultsWithRelevance(query);
 
   const parsedNumOfResults = Number(numOfResults);
   const resultsCount =

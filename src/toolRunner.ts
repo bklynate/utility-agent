@@ -1,5 +1,5 @@
 import type OpenAI from 'openai';
-import { queryGoogle } from '@tools/queryGoogle/queryGoogle';
+import { queryGoogle } from '@tools/webScraper/queryGoogle';
 import { currentWeather } from '@tools/weather';
 import logger from '@utils/logger';
 

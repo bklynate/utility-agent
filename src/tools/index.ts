@@ -1,4 +1,4 @@
 import { currentWeatherToolDefinition } from './weather/currentWeather';
-import { queryGoogleToolDefinition } from './queryGoogle/queryGoogle';
+import { queryGoogleToolDefinition } from './webScraper/queryGoogle';
 
 export const tools = [queryGoogleToolDefinition, currentWeatherToolDefinition];
