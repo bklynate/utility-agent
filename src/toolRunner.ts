@@ -1,12 +1,14 @@
 import type OpenAI from 'openai';
 import { queryGoogle } from '@tools/webScraper/queryGoogle';
 import { currentWeather } from '@tools/weather';
+import { currentLocationTool } from '@src/tools/currentLocation';
 import logger from '@utils/logger';
 
 // Map of tool functions
 const toolFunctions: Record<string, Function> = {
   query_google: queryGoogle,
   current_weather: currentWeather,
+  current_location: currentLocationTool,
 };
 
 export const runTool = async (

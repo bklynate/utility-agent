@@ -1,23 +1,79 @@
-import Parser from '@postlight/parser';
 import * as cheerio from 'cheerio';
 import logger from '@utils/logger';
-import { addMessages } from '@src/memory.ts';
+import { addMessages } from '@src/memory';
+import { pipeline } from '@xenova/transformers';
 
-const { parse } = Parser;
+let summarizer: any; // Will hold the summarization pipeline
 
 /**
- * Cleans and extracts meaningful text from a given HTML string using @postlight/parser.
+ * Initializes the summarization pipeline once (lazy loading).
+ */
+async function getSummarizer() {
+  if (!summarizer) {
+    logger.info('Loading summarization model...');
+    summarizer = await pipeline('summarization', 'Xenova/distilbart-cnn-12-6');
+  }
+  return summarizer;
+}
+
+/**
+ * Summarize a given text using the summarization model.
+ * This function attempts a hierarchical summarization if the text is too long.
  *
- * @param {string} html - The raw HTML content to clean and extract.
- * @param {string} url - The URL of the source HTML (required by @postlight/parser).
- * @returns {Promise<string>} - Cleaned and extracted text content.
+ * @param text - The text to summarize
+ * @param chunkSize - Number of words per chunk
+ * @returns The summarized text
+ */
+async function summarizeLongText(text: string, chunkSize = 512): Promise<string> {
+  const summarizationPipeline = await getSummarizer();
+
+  const words = text.split(/\s+/);
+  // If text is short enough, just summarize directly
+  if (words.length <= chunkSize) {
+    const summaryArray = await summarizationPipeline(text);
+    return summaryArray?.[0]?.summary_text?.trim() || '';
+  }
+
+  // For longer text, split into chunks
+  const chunks = [];
+  for (let i = 0; i < words.length; i += chunkSize) {
+    const chunk = words.slice(i, i + chunkSize).join(' ');
+    chunks.push(chunk);
+  }
+
+  // Summarize each chunk individually
+  const chunkSummaries = [];
+  for (const c of chunks) {
+    const summaryArray = await summarizationPipeline(c);
+    const chunkSummary = summaryArray?.[0]?.summary_text?.trim() || '';
+    chunkSummaries.push(chunkSummary);
+  }
+
+  // Now we have multiple summaries. Combine them into one text.
+  const combinedSummary = chunkSummaries.join(' ');
+
+  // If combined summary is still too long, recursively summarize again
+  if (combinedSummary.split(/\s+/).length > chunkSize) {
+    return summarizeLongText(combinedSummary, chunkSize);
+  } else {
+    return combinedSummary;
+  }
+}
+
+/**
+ * Cleans and extracts meaningful text from a given HTML string using Cheerio,
+ * and then summarizes it using a transformer-based summarization pipeline.
+ * If the text is too long, it is chunked and summarized hierarchically.
+ *
+ * @param {string} rawHtml - The raw HTML content to clean and extract.
+ * @param {string} url - The URL of the source HTML.
+ * @returns {Promise<string>} - Cleaned and summarized text content.
  */
 export async function cleanHtml(rawHtml: string, url: string): Promise<string> {
   try {
-    // Use Cheerio to clean up the HTML
     const $ = cheerio.load(rawHtml);
 
-    // Remove unwanted elements like scripts and styles
+    // Remove unwanted elements like scripts, styles, and various other noise
     const unwantedSelectors = [
       'script',
       'style',
@@ -51,7 +107,6 @@ export async function cleanHtml(rawHtml: string, url: string): Promise<string> {
       '*[class*="review"]',
     ];
 
-    // Selectors for specifically hidden elements or inline styles
     const hiddenSelectors = [
       '*[style*="display:none"]',
       '*[style*="visibility:hidden"]',
@@ -59,52 +114,49 @@ export async function cleanHtml(rawHtml: string, url: string): Promise<string> {
       'iframe[style*="visibility:hidden"]',
     ];
 
-    // Combine selectors into one array
     const allSelectors = [...unwantedSelectors, ...hiddenSelectors];
-
     $(allSelectors.join(', ')).remove();
 
-    const html = $.html();
+    // Extract text content from the body.
+    const extractedText = $('body')
+      .text()
+      .replace(/\s{2,}/g, ' ')
+      .trim();
 
-    logger.info('Starting HTML processing with @postlight/parser');
-
-    // Use @postlight/parser to extract and clean content
-    const parsedContent = await parse(url, { html, contentType: 'text' });
-
-    if (!parsedContent || !parsedContent.content) {
+    if (!extractedText) {
       await addMessages([
         {
           role: 'assistant',
-          content: `Something went wrong while parsing the content from ${url}. Let me try to assist you in another way.`,
+          content: `No meaningful text content found from ${url}. Let me try to assist you in another way.`,
         },
       ]);
-      logger.error(`Parsing failed for URL: ${url}`);
+      logger.error(`No text extracted for URL: ${url}`);
       return '';
     }
 
-    // Clean up and process the extracted content
-    const cleanedContent = parsedContent.content
-      .replace(/\s{2,}/g, ' ') // Replace multiple spaces with a single space
-      .replace(/>\s+</g, '><') // Remove spaces between tags
-      .trim(); // Remove leading and trailing whitespace
+    // Summarize the extracted text using chunking if necessary
+    logger.info('Running summarization on extracted text...');
+    const summary = await summarizeLongText(extractedText, 512);
 
-    logger.info(
-      'HTML processing completed successfully with @postlight/parser'
-    );
+    if (!summary) {
+      await addMessages([
+        {
+          role: 'assistant',
+          content: `Something went wrong while summarizing the content from ${url}. Let me try another approach.`,
+        },
+      ]);
+      logger.error(`Summarization failed for URL: ${url}`);
+      return '';
+    }
 
-    return cleanedContent;
+    logger.info('HTML processing completed successfully with summarization');
+    return summary;
   } catch (error) {
     if (error instanceof Error) {
-      logger.error(
-        'Error processing HTML with @postlight/parser:',
-        error.message
-      );
+      logger.error('Error processing HTML with transformer summarization:', error.message);
       throw new Error(`Error processing content: ${error.message}`);
     }
-    logger.error(
-      'Unexpected error processing HTML with @postlight/parser:',
-      error
-    );
+    logger.error('Unexpected error processing HTML with transformer summarization:', error);
     throw new Error('An unexpected error occurred during content processing.');
   }
 }
