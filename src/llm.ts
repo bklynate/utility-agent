@@ -1,23 +1,35 @@
-import { zodFunction } from 'openai/helpers/zod'
-import { z } from 'zod'
-import type { AIMessage } from '../types'
-import { openai } from './ai'
-import { systemPrompt } from './systemPrompt'
+import type { AIMessage } from 'types';
+import { z } from 'zod';
+import { zodFunction } from 'openai/helpers/zod';
+import { localai } from '@src/ai';
+import { systemPrompt } from '@src/systemPrompt';
+
+const models = [
+  'gpt-4o-mini',
+  'mistral-nemo:latest',
+  'nemotron-mini:latest',
+  'codellama:13b',
+  'llama3.1:latest',
+  'llama3.1:70b',
+  'llama3.3'
+];
 
 export const runLLM = async ({
-  model = 'gpt-4o-mini',
+  model = models[5],
   messages,
   temperature = 0.1,
-  tools,
+  tools = [],
 }: {
-  messages: AIMessage[]
-  temperature?: number
-  model?: string
-  tools?: { name: string; parameters: z.AnyZodObject }[]
+  model?: string;
+  temperature?: number;
+  messages: AIMessage[];
+  tools?: { name: string; parameters: z.AnyZodObject }[];
 }) => {
-  const formattedTools = tools?.map((tool) => zodFunction(tool))
-  const response = await openai.chat.completions.create({
+  const formattedTools = tools?.map((tool) => zodFunction(tool));
+
+  const response = await localai.chat.completions.create({
     model,
+    temperature,
     messages: [
       {
         role: 'system',
@@ -25,11 +37,10 @@ export const runLLM = async ({
       },
       ...messages,
     ],
-    temperature,
     tools: formattedTools,
     tool_choice: 'auto',
     parallel_tool_calls: false,
-  })
+  });
 
-  return response.choices[0].message
-}
+  return response.choices[0].message;
+};

@@ -1,7 +1,13 @@
-import type OpenAI from 'openai'
-import { generateImage } from './tools/generateImage'
-import { reddit } from './tools/reddit'
-import { dadJoke } from './tools/dadJoke'
+import type OpenAI from 'openai';
+import { queryGoogle } from '@tools/queryGoogle/queryGoogle';
+import { currentWeather } from '@tools/weather';
+import logger from '@utils/logger';
+
+// Map of tool functions
+const toolFunctions: Record<string, Function> = {
+  query_google: queryGoogle,
+  current_weather: currentWeather,
+};
 
 export const runTool = async (
   toolCall: OpenAI.Chat.Completions.ChatCompletionMessageToolCall,
@@ -9,20 +15,23 @@ export const runTool = async (
 ) => {
   const input = {
     userMessage,
-    toolArgs: JSON.parse(toolCall.function.arguments),
+    toolArgs: JSON.parse(toolCall.function.arguments || '{}'),
+  };
+
+  const toolFunction = toolFunctions[toolCall.function.name];
+  if (!toolFunction) {
+    throw new Error(`Tool ${toolCall.function.name} not found`);
   }
-  switch (toolCall.function.name) {
-    case 'generate_image':
-      const image = await generateImage(input)
-      return image
 
-    case 'dad_joke':
-      return dadJoke(input)
+  logger.info(`Running tool: ${toolCall.function.name}`);
 
-    case 'reddit':
-      return reddit(input)
-
-    default:
-      throw new Error(`Unknown tool: ${toolCall.function.name}`)
+  try {
+    const response = await toolFunction(input);
+    return response;
+  } catch (error: any) {
+    console.error(`Error in tool ${toolCall.function.name}:`, error);
+    throw new Error(
+      `Error running tool ${toolCall.function.name}: ${error.message}`
+    );
   }
-}
+};

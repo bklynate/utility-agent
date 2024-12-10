@@ -1,9 +1,4 @@
-import { generateImageToolDefinition } from './generateImage'
-import { redditToolDefinition } from './reddit'
-import { dadJokeToolDefinition } from './dadJoke'
+import { currentWeatherToolDefinition } from './weather/currentWeather';
+import { queryGoogleToolDefinition } from './queryGoogle/queryGoogle';
 
-export const tools = [
-  generateImageToolDefinition,
-  redditToolDefinition,
-  dadJokeToolDefinition,
-]
+export const tools = [queryGoogleToolDefinition, currentWeatherToolDefinition];
