@@ -10,10 +10,12 @@ const models = [
   'nemotron-mini:latest',
   'codellama:13b',
   'llama3.1:latest',
+  'llama3.1:70b',
+  'llama3.3'
 ];
 
 export const runLLM = async ({
-  model = models[1],
+  model = models[5],
   messages,
   temperature = 0.1,
   tools = [],

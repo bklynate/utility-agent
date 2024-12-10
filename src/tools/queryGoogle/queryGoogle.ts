@@ -26,6 +26,18 @@ export const queryGoogleToolDefinition = {
         .describe(
           'The number of top search results to return, sorted by relevance. Example: 3'
         ),
+      reasoning: z
+        .string()
+        .optional()
+        .describe(
+          'Why did you choose this tool or approach? Why did you choose this particular query?'
+        ),
+      reflection: z
+        .string()
+        .optional()
+        .describe(
+          'how could you have improved the output quality of your query? how could you have improved the output quality of your query?'
+        ),
     })
     .describe(
       'Input parameters for performing a Google search query, including the query text and number of results.'
@@ -92,7 +104,7 @@ async function fetchGoogleSearchResults(
       url: decodeGoogleRedirectUrl(result.url),
     }));
 
-    console.log('here is results', decodedResults);
+    logger.info('number of results:', decodedResults?.length);
 
     return decodedResults;
   } catch (error) {

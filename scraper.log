@@ -346,3 +346,65 @@
 2024-11-27T13:35:11.599Z [INFO]: Starting HTML processing with @postlight/parser
 2024-11-27T13:35:11.624Z [INFO]: HTML processing completed successfully with @postlight/parser
 2024-11-27T13:35:11.706Z [INFO]: Google search results processed successfully
+2024-11-28T19:41:56.351Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-28T19:41:56.383Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-28T19:41:59.803Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-28T19:41:59.815Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-28T19:42:01.411Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-28T19:42:01.417Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-28T19:42:01.675Z [INFO]: Google search results processed successfully
+2024-11-28T19:48:43.074Z [INFO]: Google search results processed successfully
+2024-11-28T19:52:07.412Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-28T19:52:07.806Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-28T19:52:10.767Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-28T19:52:10.791Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-28T19:52:12.619Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-28T19:52:12.636Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-28T19:52:12.724Z [INFO]: Google search results processed successfully
+2024-11-30T11:54:38.304Z [INFO]: Running tool: query_google
+2024-11-30T11:54:42.305Z [INFO]: number of results:
+2024-11-30T11:54:43.512Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-30T11:54:43.558Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-30T11:54:44.629Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-30T11:54:44.664Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-30T11:54:47.764Z [INFO]: Starting HTML processing with @postlight/parser
+2024-11-30T11:54:47.772Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-11-30T11:54:47.832Z [INFO]: Google search results processed successfully
+2024-12-08T00:39:59.612Z [INFO]: Running tool: query_google
+2024-12-08T00:40:01.465Z [INFO]: number of results:
+2024-12-08T00:40:03.921Z [INFO]: Starting HTML processing with @postlight/parser
+2024-12-08T00:40:03.977Z [ERROR]: Parsing failed for URL: https://weather.com/weather/today/l/Manhattan+NY?canonicalCityId=fc47c333c5d13e34e34c9fdb6e047ceb70f7891e01bc9e1d574b5f93f58aa76d
+2024-12-08T00:40:06.012Z [INFO]: Starting HTML processing with @postlight/parser
+2024-12-08T00:40:06.039Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-12-08T00:40:07.096Z [INFO]: Starting HTML processing with @postlight/parser
+2024-12-08T00:40:07.102Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-12-08T00:40:07.177Z [INFO]: Google search results processed successfully
+2024-12-08T01:13:47.166Z [INFO]: Running tool: query_google
+2024-12-08T01:13:48.990Z [INFO]: number of results:
+2024-12-08T01:13:52.372Z [INFO]: Starting HTML processing with @postlight/parser
+2024-12-08T01:13:52.418Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-12-08T01:13:55.091Z [INFO]: Starting HTML processing with @postlight/parser
+2024-12-08T01:13:55.128Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-12-08T01:13:56.183Z [INFO]: Starting HTML processing with @postlight/parser
+2024-12-08T01:13:56.189Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-12-08T01:13:56.265Z [INFO]: Google search results processed successfully
+2024-12-08T01:21:57.148Z [INFO]: Running tool: query_google
+2024-12-08T01:21:59.212Z [INFO]: number of results:
+2024-12-08T01:22:02.398Z [INFO]: Starting HTML processing with @postlight/parser
+2024-12-08T01:22:02.434Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-12-08T01:22:05.501Z [INFO]: Starting HTML processing with @postlight/parser
+2024-12-08T01:22:05.678Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-12-08T01:22:06.195Z [INFO]: Google search results processed successfully
+2024-12-10T01:43:15.824Z [INFO]: Running tool: current_weather
+2024-12-10T01:51:16.312Z [INFO]: Running tool: current_weather
+2024-12-10T01:52:54.164Z [INFO]: Running tool: current_weather
+2024-12-10T01:52:54.381Z [INFO]: Weather data fetched successfully for city: NYC.
+2024-12-10T01:54:52.971Z [INFO]: Running tool: query_google
+2024-12-10T01:54:54.784Z [INFO]: number of results:
+2024-12-10T01:54:55.908Z [INFO]: Starting HTML processing with @postlight/parser
+2024-12-10T01:54:55.940Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-12-10T01:54:56.878Z [INFO]: Starting HTML processing with @postlight/parser
+2024-12-10T01:54:56.893Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-12-10T01:54:58.066Z [INFO]: Starting HTML processing with @postlight/parser
+2024-12-10T01:54:58.082Z [INFO]: HTML processing completed successfully with @postlight/parser
+2024-12-10T01:54:58.148Z [INFO]: Google search results processed successfully

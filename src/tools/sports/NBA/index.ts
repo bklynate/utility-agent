@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import NBA from 'nba';
 import type { ToolFn } from 'types';
 
 // Helper function to create Tool Definitions with descriptions
@@ -11,6 +12,21 @@ const createToolDefinition = (
   description,
   parameters: schema,
 });
+
+// const curry = NBA.findPlayer('Stephen Curry');
+// console.log(curry);
+
+// const curryStats = await NBA.stats.playerInfo({ PlayerID: curry.playerId });
+
+// console.log(curryStats);
+
+// const warriorsTeamId = await NBA.teamIdFromName('warriors');
+const scoreboard = await NBA.stats.scoreboard('20181008');
+
+// console.log(warriorsTeamId);
+console.log(scoreboard);
+
+
 
 // Helper function to create Tool Functions
 // const createToolFn =
@@ -41,33 +57,33 @@ const createToolDefinition = (
 //   };
 
 // playByPlay Tool Definition
-export const playByPlayToolDefinition = createToolDefinition(
-  'play_by_play',
-  'Retrieves detailed play-by-play data for a specific game, covering all actions within specified periods.',
-  z
-    .object({
-      GameID: z
-        .string()
-        .describe(
-          'The unique identifier for the NBA game. Example: "0021500001".'
-        ),
-      StartPeriod: z
-        .string()
-        .default('1')
-        .describe(
-          'The starting period for the play-by-play data. Example: "1" for the first quarter.'
-        ),
-      EndPeriod: z
-        .string()
-        .default('4')
-        .describe(
-          'The ending period for the play-by-play data. Example: "4" for the fourth quarter.'
-        ),
-    })
-    .describe(
-      'Input parameters for fetching play-by-play data, including game ID and period range.'
-    )
-);
+// export const playByPlayToolDefinition = createToolDefinition(
+//   'play_by_play',
+//   'Retrieves detailed play-by-play data for a specific game, covering all actions within specified periods.',
+//   z
+//     .object({
+//       GameID: z
+//         .string()
+//         .describe(
+//           'The unique identifier for the NBA game. Example: "0021500001".'
+//         ),
+//       StartPeriod: z
+//         .string()
+//         .default('1')
+//         .describe(
+//           'The starting period for the play-by-play data. Example: "1" for the first quarter.'
+//         ),
+//       EndPeriod: z
+//         .string()
+//         .default('4')
+//         .describe(
+//           'The ending period for the play-by-play data. Example: "4" for the fourth quarter.'
+//         ),
+//     })
+//     .describe(
+//       'Input parameters for fetching play-by-play data, including game ID and period range.'
+//     )
+// );
 
 // export const playByPlay = createToolFn(
 //   'playByPlay',

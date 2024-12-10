@@ -1,8 +1,12 @@
 import type OpenAI from 'openai';
 import { queryGoogle } from '@tools/queryGoogle/queryGoogle';
+import { currentWeather } from '@tools/weather';
+import logger from '@utils/logger';
+
 // Map of tool functions
 const toolFunctions: Record<string, Function> = {
   query_google: queryGoogle,
+  current_weather: currentWeather,
 };
 
 export const runTool = async (
@@ -19,11 +23,10 @@ export const runTool = async (
     throw new Error(`Tool ${toolCall.function.name} not found`);
   }
 
-  console.log(`Running tool: ${toolCall.function.name}`);
+  logger.info(`Running tool: ${toolCall.function.name}`);
 
   try {
     const response = await toolFunction(input);
-    console.log(`Response from ${toolCall.function.name}:`, response);
     return response;
   } catch (error: any) {
     console.error(`Error in tool ${toolCall.function.name}:`, error);
