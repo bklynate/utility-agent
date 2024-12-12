@@ -1,6 +1,10 @@
 import * as cheerio from 'cheerio';
 import logger from '@utils/logger';
 import { addMessages } from '@src/memory';
+import { JSDOM } from 'jsdom';
+import { Readability } from '@mozilla/readability';
+
+process.env.ORT_LOG_SEVERITY_LEVEL = '3';
 import { pipeline } from '@xenova/transformers';
 
 let summarizer: any; // Will hold the summarization pipeline
@@ -24,7 +28,10 @@ async function getSummarizer() {
  * @param chunkSize - Number of words per chunk
  * @returns The summarized text
  */
-async function summarizeLongText(text: string, chunkSize = 512): Promise<string> {
+async function summarizeLongText(
+  text: string,
+  chunkSize = 512
+): Promise<string> {
   const summarizationPipeline = await getSummarizer();
 
   const words = text.split(/\s+/);
@@ -115,13 +122,21 @@ export async function cleanHtml(rawHtml: string, url: string): Promise<string> {
     ];
 
     const allSelectors = [...unwantedSelectors, ...hiddenSelectors];
-    $(allSelectors.join(', ')).remove();
+    const cleanedHTML = $.html();
+    const dom = new JSDOM(cleanedHTML);
+    const reader = new Readability(dom.window.document);
+    const article = reader.parse();
 
-    // Extract text content from the body.
-    const extractedText = $('body')
-      .text()
-      .replace(/\s{2,}/g, ' ')
-      .trim();
+    let extractedText: string;
+    if (article && article.textContent && article.textContent.trim()) {
+      extractedText = article.textContent.replace(/\s{2,}/g, ' ').trim();
+    } else {
+      // Fallback if readability fails or returns empty
+      extractedText = $('body')
+        .text()
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+    }
 
     if (!extractedText) {
       await addMessages([
@@ -153,10 +168,16 @@ export async function cleanHtml(rawHtml: string, url: string): Promise<string> {
     return summary;
   } catch (error) {
     if (error instanceof Error) {
-      logger.error('Error processing HTML with transformer summarization:', error.message);
+      logger.error(
+        'Error processing HTML with transformer summarization:',
+        error.message
+      );
       throw new Error(`Error processing content: ${error.message}`);
     }
-    logger.error('Unexpected error processing HTML with transformer summarization:', error);
+    logger.error(
+      'Unexpected error processing HTML with transformer summarization:',
+      error
+    );
     throw new Error('An unexpected error occurred during content processing.');
   }
 }

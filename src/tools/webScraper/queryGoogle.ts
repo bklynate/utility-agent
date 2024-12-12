@@ -26,7 +26,6 @@ const cosineSimilarity = (vecA: number[], vecB: number[]): number => {
   return dotProduct / (magnitudeA * magnitudeB);
 };
 
-
 // Apply stealth tactics using puppeteer-extra and stealth plugin
 puppeteer.use(StealthPlugin());
 
@@ -34,7 +33,7 @@ puppeteer.use(StealthPlugin());
 export const queryGoogleToolDefinition = {
   name: 'query_google',
   description:
-    'Fetch Google search results and return the top-ranked URLs and titles based on relevance.',
+    'Expand the agent’s knowledge by retrieving top-ranked search results for queries beyond its training or awareness. Use this tool when additional information is needed to answer user questions effectively.',
   parameters: z
     .object({
       query: z
@@ -86,13 +85,17 @@ async function fetchGoogleSearchResultsWithRelevance(
 
   // Generate embeddings
   const queryEmbedding = (await model.embed([query])).arraySync()[0];
-  const resultEmbeddings = (await model.embed(results.map((r) => r.title))).arraySync();
+  const resultEmbeddings = (
+    await model.embed(results.map((r) => r.title))
+  ).arraySync();
 
   // Calculate relevance scores
-  return results.map((result, index) => ({
-    ...result,
-    relevance: cosineSimilarity(queryEmbedding, resultEmbeddings[index]),
-  })).sort((a, b) => b.relevance - a.relevance); // Sort by relevance
+  return results
+    .map((result, index) => ({
+      ...result,
+      relevance: cosineSimilarity(queryEmbedding, resultEmbeddings[index]),
+    }))
+    .sort((a, b) => b.relevance - a.relevance); // Sort by relevance
 }
 
 // Helper function to fetch search results
