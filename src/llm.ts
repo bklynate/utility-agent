@@ -1,7 +1,7 @@
 import type { AIMessage } from 'types';
 import { z } from 'zod';
 import { zodFunction } from 'openai/helpers/zod';
-import { localai } from '@src/ai';
+import { getLocalAIByProvider } from '@src/ai';
 import { systemPrompt } from '@src/systemPrompt';
 
 const models = [
@@ -27,7 +27,7 @@ export const runLLM = async ({
 }) => {
   const formattedTools = tools?.map((tool) => zodFunction(tool));
 
-  const response = await localai.chat.completions.create({
+  const response = await getLocalAIByProvider('ollama').chat.completions.create({
     model,
     temperature,
     messages: [
