@@ -10,6 +10,7 @@ The **Utility Agent** is a command-line interface (CLI) program built with TypeS
 ### **Features**
 - **CLI-Based**: Interact with the agent through a terminal interface.
 - **Robust API Integration**: Leverage tools like Balldontlie, OpenAI, and Tomorrow.io for NBA data, LLM prompts, and weather data.
+- **Local LLM Integration**: Run the agent with local LLMs powered by Ollama or LM Studio.
 - **Rate-Limiting and Retry Logic**: Centralized request handling ensures compliance with API limits.
 - **Memory and State Management**: Persistent and transient memory layers using `lowdb` for effective state tracking.
 - **Web Scraping**: Integrated tools for extracting and cleaning web data with Puppeteer and Cheerio.
